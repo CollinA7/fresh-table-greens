@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/CollinA7/fresh-table-greens/issues"
   },
-  "homepage": "https://github.com/CollinA7/fresh-table-greens#readme"
+  "homepage": "https://github.com/CollinA7/fresh-table-greens#readme",
+  "dependencies": {
+    "bulma": "^0.9.4"
+  }
 }
