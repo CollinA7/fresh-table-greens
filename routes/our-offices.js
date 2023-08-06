@@ -3,7 +3,7 @@ const router = express.Router();
 
 // GET our offices
 router.get("/", function (req, res, next) {
-  res.render("ourOffices", { title: "offices of Fresh Table" });
+  res.render("our-offices", { title: "offices of Fresh Table" });
 });
 
 module.exports = router;
