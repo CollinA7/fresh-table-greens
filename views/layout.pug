@@ -4,19 +4,24 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     header
-      h1 Fresh Table Greens
-    block content
+      h1
+        a(href='/') Fresh Table Greens
     ul 
     li
-      a(class='about-us' href='/about') about us
+      a(class='about-us' href='/about') About Us
     li
-      a(class='products' href='/products') products
-    //- li
-      a(class='' href=('/')fun)
+      a(class='sustainability' href='/sustainability') Sustainability
+    li
+      a(class='products&services' href='/products&services') Products and Services
+    li
+      a(class='news&blog' href='/news&blog') News and blog
+    li
+      a(class='our-offices' href='/our-offices') Our Offices
     br
+    block content
     hr
   footer
     p Copyright &copy; 2023
     ul 
-    li About us
-    li Career
+    li 
+      a Contact us 

@@ -8,7 +8,10 @@ const logger = require("morgan");
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
 const aboutRouter = require("./routes/about");
-const productsRoutes = require("./routes/products");
+const productsRouter = require("./routes/products");
+const newsAndBlogRouter = require("./routes/newsAndBlog");
+const ourOfficesRouter = require("./routes/ourOffices");
+const sustainabilityRouter = require("./routes/sustainability");
 
 const app = express();
 
@@ -26,7 +29,10 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/about", aboutRouter);
-app.use("/products", productsRoutes);
+app.use("/products", productsRouter);
+app.use("/news&blog", newsAndBlogRouter);
+app.use("/our-offices", ourOfficesRouter);
+app.use("/sustainability", sustainabilityRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
