@@ -10,7 +10,7 @@ const usersRouter = require("./routes/users");
 const aboutRouter = require("./routes/about");
 const productsRouter = require("./routes/products");
 const ourOfficesRouter = require("./routes/our-offices");
-const newsAndBlogRouter = require("./routes/newsAndBlog");
+const newsAndBlogRouter = require("./routes/news-and-blog");
 const sustainabilityRouter = require("./routes/sustainability");
 
 const app = express();
@@ -31,7 +31,7 @@ app.use("/users", usersRouter);
 app.use("/about", aboutRouter);
 app.use("/products", productsRouter);
 app.use("/our-offices", ourOfficesRouter);
-app.use("/news&blog", newsAndBlogRouter);
+app.use("/news-and-blog", newsAndBlogRouter);
 app.use("/sustainability", sustainabilityRouter);
 
 // catch 404 and forward to error handler
