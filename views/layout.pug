@@ -1,22 +1,17 @@
 doctype html
 html
   head
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     header
-      h1
-        a(href='/') Fresh Table Greens
-    ul 
-    li
-      a(class='about-us' href='/about') About Us
-    li
-      a(class='sustainability' href='/sustainability') Sustainability
-    li
-      a(class='products' href='/products') Products and Services
-    li
-      a(class='news-and-blog' href='/news-and-blog') News and blog
-    li
-      a(class='our-offices' href='/our-offices') Our Offices
+      nav(class='navbar')
+        a(class='title', href='/') Fresh Table Greens
+        a(class='about-us navbar-item' href='/about') About Us
+        a(class='sustainability navbar-item' href='/sustainability') Sustainability
+        a(class='products navbar-item' href='/products') Products and Services
+        a(class='news-and-blog navbar-item' href='/news-and-blog') News and blog
+        a(class='our-offices navbar-item' href='/our-offices') Our Offices
     br
     block content
     hr
