@@ -1,8 +1,36 @@
+:root {
+  /* TODO: add colors here that the social media team provide */
+}
+
 body {
-  padding: 50px;
+  padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+header {
+  background-color: #00b7ff;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  border: 10px;
+}
+
+footer {
+  padding: 20px;
+}
+
+nav {
+  background-color: #00b7ff;
+}
+
+.navbar {
+  background-color: #00b7ff;
+}
+
+main {
+  padding: 20px;
 }
