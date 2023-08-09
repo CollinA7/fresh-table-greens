@@ -3,36 +3,40 @@ html
   head
     link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="./javascripts/index.js") 
   body
     header(class='')
       a(class='title' href='/') Fresh Table Greens
-      div(class='navbar')
-        nav(class='navbar-start')
-          div(class='navbar-item has-dropdown is-hoverable')
-            a(id='about-us' class='navbar-link' href='/about') About us
-            div(class='navbar-dropdown')
-              a(class='navbar-item' href=''/*TODO: add Awards link here*/) Awards
-              a(class='navbar-item' href=''/*TODO: add CS link here*/) Corporate Sustainability
-          div(class='navbar-item has-dropdown is-hoverable')
-            a(class="navbar-link" href='/sustainability') Sustainability
-            div(class='navbar-dropdown')
-              a(class='navbar-item' href="") Alliances
-              a(class='navbar-item' href="") Certifications
-              a(class='navbar-item' href="") Health and Safety during covid 19
-          div(class='navbar-item has-dropdown is-hoverable')
-            a(class='navbar-link' href='/products') Products and Services
-            div(class='navbar-dropdown')
-              a(class='navbar-item' href='') Placeholder 
-              a(class='navbar-item' href='') Placeholder 
-              a(class='navbar-item' href='') Placeholder 
-              a(class='navbar-item' href='') Placeholder 
-              a(class='navbar-item' href='') Placeholder 
-          a(class='news-and-blog navbar-item' href='/news-and-blog') News and blog
-          div(class='navbar-item has-dropdown is-hoverable')
-            a(href="/our-offices" class='navbar-link') Our Offices
-            div(class='navbar-dropdown')
-              a(class='navbar-item' href="") Placeholder
-              a(class='navbar-item' href="") Placeholder
+      a(role='button' class='navbar-burger' data-target='navMenu' aria-label='menu' aria-expanded='false')
+        span(aria-hidden='true')
+        span(aria-hidden='true')
+        span(aria-hidden='true')
+      div(class='navbar-menu' id='navMenu')
+        div(class='navbar-item has-dropdown is-hoverable navbar-start')
+          a(id='about-us' class='navbar-link' href='/about') About us
+          div(class='navbar-dropdown')
+            a(class='navbar-item' href=''/*TODO: add Awards link here*/) Awards
+            a(class='navbar-item' href=''/*TODO: add CS link here*/) Corporate Sustainability
+        div(class='navbar-item has-dropdown is-hoverable')
+          a(class="navbar-link" href='/sustainability') Sustainability
+          div(class='navbar-dropdown')
+            a(class='navbar-item' href="") Alliances
+            a(class='navbar-item' href="") Certifications
+            a(class='navbar-item' href="") Health and Safety during covid 19
+        div(class='navbar-item has-dropdown is-hoverable')
+          a(class='navbar-link' href='/products') Products and Services
+          div(class='navbar-dropdown')
+            a(class='navbar-item' href='') Placeholder 
+            a(class='navbar-item' href='') Placeholder 
+            a(class='navbar-item' href='') Placeholder 
+            a(class='navbar-item' href='') Placeholder 
+            a(class='navbar-item' href='') Placeholder 
+        a(class='news-and-blog navbar-item' href='/news-and-blog') News and blog
+        div(class='navbar-item has-dropdown is-hoverable navbar-end')
+          a(href="/our-offices" class='navbar-link') Our Offices
+          div(class='navbar-dropdown')
+            a(class='navbar-item' href="") Placeholder
+            a(class='navbar-item' href="") Placeholder
     br
     main
       block content
